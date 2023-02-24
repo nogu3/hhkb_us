@@ -3,6 +3,13 @@
 ; official
 ; https://sites.google.com/site/autohotkeyjp/reference/Introduction
 
+; 実行中のスクリプトがもうひとつ起動されたとき、自動的に既存のプロセスを終了して新たに実行開始する
+#SingleInstance, Force
+; Send、SendRaw、Click コマンドおよび Mouse 系コマンドを処理する際に、システムに一連の操作イベントをまとめて送り込む. inputモード=最速
+SendMode Input
+; スクリプトの作業ディレクトリを実行スクリプトが置いてあるディレクトリにする
+SetWorkingDir, %A_ScriptDir%
+
 Space::
     KeyWait, Space, T0.2
     If (ErrorLevel == 0){
@@ -72,4 +79,10 @@ RAlt::Send, {vk1Csc079}
         Send {Space}
         IsAltTabMenu := false
     Return
+    Esc::
+        Send {Esc}
+        IsAltTabMenu := false
+    LButton::
+        Send {LButton}
+        IsAltTabMenu := false
 #If
