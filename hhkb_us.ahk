@@ -10,6 +10,7 @@ SendMode Input
 ; スクリプトの作業ディレクトリを実行スクリプトが置いてあるディレクトリにする
 SetWorkingDir, %A_ScriptDir%
 
+; delay single space
 Space::
     KeyWait, Space, T0.2
     If (ErrorLevel == 0){
@@ -17,10 +18,46 @@ Space::
         return
     }
     return
+
+; delay alt + space(for command rancher)
+!Space::
+    KeyWait, Space, T0.2
+    If (ErrorLevel == 0){
+        Send, !{Space}
+        return
+    }
+    return
    
 ;allow
-~Space & i::Send, {up}
-~Space & k::Send, {down} 
+Space & i::
+  ; vscode settings
+  if GetKeyState("LShift") && GetKeyState("LAlt") {
+    Send, +!{up}
+    return
+  }
+
+  if GetKeyState("LAlt") {
+    Send, !{up}
+    return
+  }
+
+  Send, {up} 
+  return
+
+Space & k::
+  ; vscode settings
+  if GetKeyState("LShift") && GetKeyState("LAlt") {
+    Send, +!{down}
+    return
+  }
+
+  if GetKeyState("LAlt") {
+    Send, !{down}
+    return
+  }
+
+  Send, {down} 
+  return
 
 ;https://tex2e.github.io/blog/keyboard/ahk-triple-key
 ;left or Home
