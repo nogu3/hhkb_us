@@ -58,6 +58,18 @@ LAlt::Send, {vk1Dsc07B}
 ;RAlt -> kana
 RAlt::Send, {vk1Csc079}
 
+; number
+RAlt & w::Send, {1} 
+RAlt & e::Send, {2}
+RAlt & r::Send, {3}
+RAlt & s::Send, {4}
+RAlt & d::Send, {5}
+RAlt & f::Send, {6}
+RAlt & x::Send, {7}
+RAlt & c::Send, {8}
+RAlt & v::Send, {9}
+RAlt & a::Send, {0}
+
 ; alt tab menu FYI
 ; https://zenn.dev/eetann/articles/2020-12-24-my-ahk-script
 
