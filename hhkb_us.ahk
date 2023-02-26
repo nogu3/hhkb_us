@@ -70,6 +70,11 @@ RAlt & c::Send, {8}
 RAlt & v::Send, {9}
 RAlt & a::Send, {0}
 
+; screen lock
+; FYI
+; https://stackoverflow.com/questions/42314908/how-can-i-lock-my-computer-with-autohotkey
+^r::DllCall("LockWorkStation")
+
 ; alt tab menu FYI
 ; https://zenn.dev/eetann/articles/2020-12-24-my-ahk-script
 
