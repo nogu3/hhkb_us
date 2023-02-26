@@ -10,6 +10,11 @@ SendMode Input
 ; スクリプトの作業ディレクトリを実行スクリプトが置いてあるディレクトリにする
 SetWorkingDir, %A_ScriptDir%
 
+; exclude fortnite
+#IfWinActive, FortniteClient-Win64-Shipping.exe
+Return
+#IfWinActive
+
 ; delay single space
 Space::
     KeyWait, Space, T0.2
