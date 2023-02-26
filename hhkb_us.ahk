@@ -1,4 +1,4 @@
-﻿; Main FYI
+﻿; Main
 ; https://www.naporitansushi.com/autohotkey/# 
 ; official
 ; https://sites.google.com/site/autohotkeyjp/reference/Introduction
@@ -59,8 +59,8 @@ Space & k::
   Send, {down} 
   return
 
-;https://tex2e.github.io/blog/keyboard/ahk-triple-key
 ;left or Home
+;https://tex2e.github.io/blog/keyboard/ahk-triple-key
 Space & j::
   if GetKeyState("LControl") {
     Send, {home}
@@ -86,7 +86,7 @@ Space & l::
 ^Enter::Send, {`;}
 +Enter::Send, {`:}
 
-;ime on/off FYI
+;ime on/off
 ;https://dtptransit.design/misc/windows/customize-keyboards-for-Japanese-input-method.html
 
 ;LAlt -> eisuu
@@ -108,11 +108,10 @@ RAlt & v::Send, {9}
 RAlt & a::Send, {0}
 
 ; screen lock
-; FYI
 ; https://stackoverflow.com/questions/42314908/how-can-i-lock-my-computer-with-autohotkey
 ^r::DllCall("LockWorkStation")
 
-; alt tab menu FYI
+; alt tab menu
 ; https://zenn.dev/eetann/articles/2020-12-24-my-ahk-script
 
 <!w::
