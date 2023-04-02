@@ -17,7 +17,7 @@ Return
 
 ; delay single space
 Space::
-    KeyWait, Space, T0.2
+    KeyWait, Space, T0.15
     If (ErrorLevel == 0){
         Send, {Space}
         return
@@ -26,7 +26,7 @@ Space::
 
 ; delay alt + space(for command rancher)
 !Space::
-    KeyWait, Space, T0.2
+    KeyWait, Space, T0.15
     If (ErrorLevel == 0){
         Send, !{Space}
         return
