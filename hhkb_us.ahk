@@ -91,6 +91,9 @@ Space & l::
 ^Enter::Send, {`;}
 +Enter::Send, {`:}
 
+; break console
+^.::^c
+
 ;ime on/off
 ;https://dtptransit.design/misc/windows/customize-keyboards-for-Japanese-input-method.html
 
