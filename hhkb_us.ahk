@@ -36,6 +36,11 @@ Space::
 ;allow
 Space & i::
   ; vscode settings
+    if GetKeyState("LControl") && GetKeyState("LAlt") {
+    Send, ^!{up}
+    return
+  }
+
   if GetKeyState("LShift") && GetKeyState("LAlt") {
     Send, +!{up}
     return
@@ -51,6 +56,11 @@ Space & i::
 
 Space & k::
   ; vscode settings
+  if GetKeyState("LControl") && GetKeyState("LAlt") {
+    Send, ^!{down}
+    return
+  }
+
   if GetKeyState("LShift") && GetKeyState("LAlt") {
     Send, +!{down}
     return
