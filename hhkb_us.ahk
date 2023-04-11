@@ -17,7 +17,7 @@ Return
 
 ; delay single space
 Space::
-    KeyWait, Space, T0.15
+    KeyWait, Space, T0.17
     If (ErrorLevel == 0){
         Send, {Space}
         return
@@ -26,7 +26,7 @@ Space::
 
 ; delay alt + space(for command rancher)
 !Space::
-    KeyWait, Space, T0.15
+    KeyWait, Space, T0.17
     If (ErrorLevel == 0){
         Send, !{Space}
         return
@@ -100,9 +100,6 @@ Space & l::
 ;semicolon 
 ^Enter::Send, {`;}
 +Enter::Send, {`:}
-
-; break console
-^.::^c
 
 ;ime on/off
 ;https://dtptransit.design/misc/windows/customize-keyboards-for-Japanese-input-method.html
