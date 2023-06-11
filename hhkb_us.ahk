@@ -7,8 +7,6 @@
 
 ; This AutoHotkey is auto restart when another AutoHotkey script.
 #SingleInstance Force
-; "Input" is speedy and recommend.
-SendMode "Input"
 ; working dir is script run dir.
 SetWorkingDir A_ScriptDir
 
