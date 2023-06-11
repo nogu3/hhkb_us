@@ -9,7 +9,6 @@
 #SingleInstance Force
 ; "Input" is speedy and recommend.
 SendMode "Input"
-; スクリプトの作業ディレクトリを実行スクリプトが置いてあるディレクトリにする
 ; working dir is script run dir.
 SetWorkingDir A_ScriptDir
 
