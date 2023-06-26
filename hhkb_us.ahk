@@ -78,3 +78,6 @@ LAlt & w::AltTab
 
 ; shift + alt + space is undefine for vscode shortcut
 !+Space::return
+
+; screen shot
+^+s::#+s
