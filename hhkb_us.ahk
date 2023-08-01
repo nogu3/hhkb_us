@@ -34,6 +34,7 @@ SinglePress(lastkey, sendkey) {
 ; [single press]
 Space:: SinglePress("Space", "{Space}")
 !Space:: SinglePress("Space", "!{Space}")
+~LControl:: SinglePress("LControl", "{Enter}")
 
 ; [key combination]
 ; allow
