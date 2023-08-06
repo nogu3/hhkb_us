@@ -50,6 +50,8 @@ Space & l:: CombinationCtrl("{right}", "{end}")
 ; semicolon and colon
 ^Enter::Send "{`;}"
 +Enter::Send "{`:}"
+; for slack
+!Enter:: ^Enter
 
 ; LAlt -> eisuu
 LAlt::Send "{vk1Dsc07B}"
