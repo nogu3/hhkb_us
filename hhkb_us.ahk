@@ -5,6 +5,8 @@
 ; official
 ; https://ahkscript.github.io/ja/docs/v2/Hotkeys.htm#Intro
 
+; use keyboard hook
+#UseHook
 ; This AutoHotkey is auto restart when another AutoHotkey script.
 #SingleInstance Force
 ; working dir is script run dir.
