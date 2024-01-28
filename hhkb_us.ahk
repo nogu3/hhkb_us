@@ -34,20 +34,12 @@ SinglePress(lastkey, sendkey) {
 }
 
 ; [single press]
-Space:: SinglePress("Space", "{Space}")
-!Space:: SinglePress("Space", "!{Space}")
 ~LControl:: SinglePress("LControl", "{Enter}")
 
 ; [key combination]
 ; allow
-Space & j:: CombinationCtrl("{left}", "{home}") 
-Space & l:: CombinationCtrl("{right}", "{end}") 
-~Space & i::up
-~Space & k::down
-
-; delete
-~Space & s::backspace
-~Space & d::delete
+~^left::home
+~^right::end
 
 ; semicolon and colon
 ^Enter::Send "{`;}"
