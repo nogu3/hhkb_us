@@ -59,7 +59,7 @@ LAlt & w::AltTab
 
 ; screen lock
 ; https://stackoverflow.com/questions/42314908/how-can-i-lock-my-computer-with-autohotkey
-^r::DllCall("LockWorkStation")
+^+r::DllCall("LockWorkStation")
 
 ; shift + alt + space is undefine for vscode shortcut
 !+Space::return
